@@ -290,7 +290,7 @@ function createLoadingScreen() {
                 text-align: center;
                 color: white;
             ">
-                <h2 style="margin-bottom: 20px;">Dr. Masipha Pre-School</h2>
+                                 <h2 style="margin-bottom: 20px;">Doctor M.D Masipa Pre-School</h2>
                 <div style="
                     width: 50px;
                     height: 50px;
