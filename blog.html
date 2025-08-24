@@ -145,6 +145,85 @@
             font-size: 1.2rem;
         }
 
+        /* Blog Images */
+        .blog-hero-image {
+            margin: 2rem 0;
+            text-align: center;
+        }
+
+        .hero-image {
+            width: 100%;
+            max-width: 800px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .image-caption {
+            font-size: 0.9rem;
+            color: #666;
+            font-style: italic;
+            margin-top: 0.5rem;
+            text-align: center;
+        }
+
+        .story-content-with-image {
+            display: grid;
+            grid-template-columns: 1fr 300px;
+            gap: 2rem;
+            align-items: start;
+        }
+
+        .story-text {
+            flex: 1;
+        }
+
+        .story-image {
+            text-align: center;
+        }
+
+        .story-img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .story-img:hover {
+            transform: scale(1.05);
+        }
+
+        .team-showcase {
+            text-align: center;
+            margin: 2rem 0;
+        }
+
+        .team-showcase-img {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            margin-bottom: 1rem;
+        }
+
+        .team-description {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 1rem;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border-left: 4px solid #667eea;
+        }
+
+        .team-description p {
+            margin: 0;
+            color: #333;
+            line-height: 1.6;
+        }
+
         @media (max-width: 768px) {
             .blog-container {
                 padding: 100px 15px 40px;
@@ -156,6 +235,19 @@
 
             .blog-section h2 {
                 font-size: 1.5rem;
+            }
+
+            .story-content-with-image {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+
+            .story-img {
+                height: 150px;
+            }
+
+            .team-showcase-img {
+                max-width: 100%;
             }
         }
     </style>
@@ -205,6 +297,11 @@
                 </h3>
             </div>
 
+            <div class="blog-hero-image">
+                <img src="assets/images/banner (2).jpg" alt="Doctor M.D Masipa Pre-School Banner" class="hero-image">
+                <div class="image-caption">Doctor M.D Masipa Pre-School - A place where excellence meets education</div>
+            </div>
+
             <section class="blog-section">
                 <h2>Our Vision</h2>
                 <p>Inspiring curiosity, independence, and lifelong love for learning. Helping learners become
@@ -225,46 +322,115 @@
             </section>
 
             <section class="blog-section">
+                <h2>Our Dedicated Team</h2>
+                <div class="team-showcase">
+                    <img src="assets/images/team picture (2).jpg" alt="Doctor M.D Masipa Pre-School Team"
+                        class="team-showcase-img">
+                    <div class="team-description">
+                        <p>Our passionate educators working together to create a nurturing learning environment for
+                            every child. The team at Doctor M.D Masipa Pre-School is committed to excellence and
+                            dedicated to the development of each child's potential.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="blog-section">
                 <h2>Success Stories</h2>
 
                 <div class="success-story">
                     <h4><i class="fas fa-chalkboard-teacher"></i> Empowering Educators</h4>
-                    <p>Doctor M.D Masipa Pre-school's commitment to empowering their educators through development,
-                        training and support has been a success for the last 10 years since the founding of the NPO.
-                        Teacher training programs have been implemented which allows teachers to go on school trips,
-                        workshops, and conferences to better educate them on how to handle the kids at the school. They
-                        also make use of mentorship dynamism which highlights the importance of experienced educators to
-                        guide the less experienced educators.</p>
+                    <div class="story-content-with-image">
+                        <div class="story-text">
+                            <p>Doctor M.D Masipa Pre-school's commitment to empowering their educators through
+                                development,
+                                training and support has been a success for the last 10 years since the founding of the
+                                NPO.
+                                Teacher training programs have been implemented which allows teachers to go on school
+                                trips,
+                                workshops, and conferences to better educate them on how to handle the kids at the
+                                school. They
+                                also make use of mentorship dynamism which highlights the importance of experienced
+                                educators to
+                                guide the less experienced educators.</p>
+                        </div>
+                        <div class="story-image">
+                            <img src="assets/images/team picture.jpg" alt="Doctor M.D Masipa Pre-School Team"
+                                class="story-img">
+                            <div class="image-caption">Our dedicated team of educators working together</div>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="success-story">
                     <h4><i class="fas fa-users"></i> Inspiring Future Leaders</h4>
-                    <p>Doctor M.D Masipa Pre-school encourages leadership skills for their young children at a young age
-                        to prepare them for a bright future ahead of them. They have launched teacher leadership
-                        programs which explains the pre-school's curriculum and the kind of teaching methods the
-                        educators should make use of to make sure the kids understand them. They are provided with
-                        alphabets to help them say, name, and write down their names on a daily basis to better grasp
-                        them. Learner ship programs are also utilized where the kids are given leadership roles to
-                        further prepare them for the future.</p>
+                    <div class="story-content-with-image">
+                        <div class="story-text">
+                            <p>Doctor M.D Masipa Pre-school encourages leadership skills for their young children at a
+                                young age
+                                to prepare them for a bright future ahead of them. They have launched teacher leadership
+                                programs which explains the pre-school's curriculum and the kind of teaching methods the
+                                educators should make use of to make sure the kids understand them. They are provided
+                                with
+                                alphabets to help them say, name, and write down their names on a daily basis to better
+                                grasp
+                                them. Learner ship programs are also utilized where the kids are given leadership roles
+                                to
+                                further prepare them for the future.</p>
+                        </div>
+                        <div class="story-image">
+                            <img src="assets/images/classroom.jpg" alt="Doctor M.D Masipa Pre-School Classroom"
+                                class="story-img">
+                            <div class="image-caption">Children learning and developing leadership skills in our
+                                nurturing environment</div>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="success-story">
                     <h4><i class="fas fa-heart"></i> Passion for Learning</h4>
-                    <p>Doctor M.D Masipa Pre-school educators recognizes the importance of teaching the children about
-                        various aspects of life which includes religion. While the school focuses on childhood
-                        development, they also strive to encourage diversity, inclusivity, and social-emotional
-                        learning. The educator is seeing teaching the children about the story of Solomon. This shows
-                        how important it is for these young children to embrace god in their pursuit for knowledge.</p>
+                    <div class="story-content-with-image">
+                        <div class="story-text">
+                            <p>Doctor M.D Masipa Pre-school educators recognizes the importance of teaching the children
+                                about
+                                various aspects of life which includes religion. While the school focuses on childhood
+                                development, they also strive to encourage diversity, inclusivity, and social-emotional
+                                learning. The educator is seeing teaching the children about the story of Solomon. This
+                                shows
+                                how important it is for these young children to embrace god in their pursuit for
+                                knowledge.</p>
+                        </div>
+                        <div class="story-image">
+                            <img src="assets/images/classroom (2).jpg"
+                                alt="Doctor M.D Masipa Pre-School Learning Environment" class="story-img">
+                            <div class="image-caption">Our vibrant learning environment where children develop their
+                                passion for knowledge</div>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="success-story">
                     <h4><i class="fas fa-building"></i> School Development Underway</h4>
-                    <p>The principal of Doctor M.D Masipa Pre-school announced the building of a new school which will
-                        provide essential services to the community, including education and social benefits. This will
-                        allow the school to move their children out of the donated mobile classes which they got from
-                        their sponsors to the new complete school which is being built soon. Furthermore, this will
-                        increase publicity of the school and make for new sponsorships and donations which will help
-                        increase the organization's reputation.</p>
+                    <div class="story-content-with-image">
+                        <div class="story-text">
+                            <p>The principal of Doctor M.D Masipa Pre-school announced the building of a new school
+                                which will
+                                provide essential services to the community, including education and social benefits.
+                                This will
+                                allow the school to move their children out of the donated mobile classes which they got
+                                from
+                                their sponsors to the new complete school which is being built soon. Furthermore, this
+                                will
+                                increase publicity of the school and make for new sponsorships and donations which will
+                                help
+                                increase the organization's reputation.</p>
+                        </div>
+                        <div class="story-image">
+                            <img src="assets/images/mobiles.jpg" alt="Doctor M.D Masipa Pre-School Mobile Classrooms"
+                                class="story-img">
+                            <div class="image-caption">Current mobile classrooms that will be replaced with the new
+                                school building</div>
+                        </div>
+                    </div>
                 </div>
             </section>
 
